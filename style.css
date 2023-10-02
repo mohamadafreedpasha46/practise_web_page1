@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arail;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #3a5107;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+header ul{ 
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+header a{
+    color: #ddd;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 30px;  
+}
+
+#menu li{
+    padding: 10px;
+
+}
+
+#Social-link li{
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+}
+aside{
+    padding: 10px;
+    flex: 0 0 20vw;
+    background: rgb(52, 75, 76);
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside ul a{
+    color: silver;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid gray;
+
+}
+aside img{
+    width: 100%;
+}
+article{
+    padding: 10px;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-box{
+    border: 1px solid #ddd;
+    flex-basis: 50%;
+    max-width: 370px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box img{
+    width: 100%;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+
+.service-desc-1{
+    animation: colorchange 4s ease-in;
+    
+}
+
+/* animation keyframe */
+
+@keyframes colorchange {
+    0%{
+        background-color: antiquewhite;
+    }
+
+    50%{
+        background-color: bisque;
+    }
+
+    100%{
+        background-color: darkgray;
+    }
+    
+}
+
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a{
+    background: gray;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 8px 13px;
+    display: block;
+}
+.call-to-action a:hover{
+    color: rgb(35, 73, 73);
+    background: transparent;
+    border: 2px solid grey;
+}
+.base-line{
+    background: #556c2b;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 850px){
+    .service-box{
+        flex-basis: 50%;
+        max-width: 370px;
+    }
+    aside{
+        flex: 0 0 2vw;
+    }
+}
